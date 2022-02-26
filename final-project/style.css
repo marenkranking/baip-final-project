@@ -1,0 +1,174 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: #323232;
+    color: white;
+}
+
+/********************** INTRO INTERACTIVE ************/
+
+.intro-section {
+    width: 100vw;
+    overflow: scroll;
+}
+
+.intro-section img {
+    height: 90vh;
+}
+
+/* .intro-section-card {
+    height: 50vh;
+    width: 100vw;
+    overflow: visible;
+    background-color: white;
+}
+
+.intro-section-card img {
+    width: 75vw;
+} */
+
+
+/******************* CHRIS CHU VIDEO *****************/
+
+.chris-chu-video-div {
+    height: 90vh;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+/******************** STICKY FILM ********************/
+
+.film-section-container {
+    display: flex;
+    flex: wrap;
+}
+
+.stickyfilm-div {
+    width: 40%;
+}
+
+.film-on-side {
+    width: 60%;
+}
+
+#stickyfilm {
+    position: sticky;
+    top: 0;
+    width: 50%;
+    padding-left: 32%;
+}
+
+
+/******************** GRAPH ********************/
+
+#graph {
+    width: 60%;
+    padding-left: 13%;
+    padding-right: 27%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+/************* HEADER (HED, DEK, BYLINE) **************/
+
+.article-top-content {
+    margin-top: 15vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.article-hed {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    margin-bottom: 0;
+    line-height: 1.1em;
+}
+
+.article-dek {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 15px;
+    line-height: 1.1em;
+}
+
+.article-byline {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.subhed {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding-left: 32%;
+    padding-right: 32%;
+}
+
+
+/************* BODY TEXT **************/
+
+.article-body {
+    text-align: left;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    font-family: 'Average', serif;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+.article-body > p {
+    margin-bottom: 20px;
+    padding-left: 32%;
+    padding-right: 32%;
+}
+
+.film-on-side > p, .film-on-side > .subhed {
+    padding-left: 13%;
+    padding-right: 27%;
+    margin-bottom: 20px;
+}
+
+/**** DROP CAP - you can change color / font if needed ****/
+
+.drop-cap:first-child:first-letter {
+    font-weight: 600;
+    font-size: 62px;
+    float: left;
+    line-height: 48px;
+    margin-top: 10px;
+    padding-right: 8px;
+}
+
+
+/************* MOBILE STYLING **************/
+/* add any mobile-specific CSS here but please leave .navbar and .article-credits styling as is! */
+
+@media screen and (max-width: 700px){
+    .article-top-content {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .article-hed{
+        font-size: 3em;
+    }
+    .article-dek{
+        font-size: 1.5em;
+    }
+    .article-byline{
+        font-size: 1em;
+    }
+    .article-body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
